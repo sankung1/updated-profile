@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import {Container, Navbar, Nav} from "react-bootstrap";
 import './App.css';
 
+import Footer from "./components/Footer";
+
 class App extends Component {
 
   constructor(props){
@@ -50,7 +52,10 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          <Footer/>
         </Container>
+        
       </Router>
     );
   }
