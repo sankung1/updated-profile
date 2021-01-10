@@ -20,8 +20,8 @@ class App extends Component {
       ],
       home: {
         title: "Sankung Sillah",
-        subtitle: "My portfolio",
-        text: "Checkout my projects",
+        subTitle: "Full Stack Developer",
+        text: "Checkout my projects below",
       },
       about: {
         title: "About Me",
@@ -59,19 +59,17 @@ class App extends Component {
             render={() => (
               <HomePage
                 title={this.state.home.title}
-                subtitle={this.state.home.subtitle}
+                subTitle={this.state.home.subTitle}
                 text={this.state.home.text}
               />
             )}
           />
           <Route
-            path="/"
-            exact
+            path="/about"
             render={() => (<AboutPage title={this.state.about.title} />)}
           />
           <Route
-            path="/"
-            exact
+            path="/contact"
             render={() => (<ContactPage title={this.state.contact.title} />)}
           />
 
