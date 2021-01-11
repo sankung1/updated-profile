@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form from "react-bootstrap";
+import {Form} from "react-bootstrap";
 
 import Message from "../components/Message";
 import Content from "../components/Content";
@@ -26,6 +26,14 @@ class ContactPage extends Component {
 
     this.setState({
       [name]: value
+    });
+  }
+
+  handleSubmit = (e) =>{
+    e.preventDefault();
+
+    this.setState({
+      disabled: true
     });
   }
 
