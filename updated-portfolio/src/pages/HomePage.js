@@ -5,7 +5,7 @@ import Carousel from "../components/Carousel";
 
 function HomePage(props) {
   return (
-    <div>
+    <div className="bg-color m-0">
       <Message
         title={props.title}
         subTitle={props.subTitle}

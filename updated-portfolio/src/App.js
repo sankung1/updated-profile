@@ -34,11 +34,18 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Container fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+        <Container fluid={true} className="bg-color">
+          <Navbar
+            className="border-bottom text-color"
+            bg="transparent"
+            expand="lg"
+          >
             <Navbar.Brand>Sankung</Navbar.Brand>
 
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+            <Navbar.Toggle
+              className="border-0 "
+              aria-controls="navbar-toggle"
+            />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
@@ -66,11 +73,11 @@ class App extends Component {
           />
           <Route
             path="/about"
-            render={() => (<AboutPage title={this.state.about.title} />)}
+            render={() => <AboutPage title={this.state.about.title} />}
           />
           <Route
             path="/contact"
-            render={() => (<ContactPage title={this.state.contact.title} />)}
+            render={() => <ContactPage title={this.state.contact.title} />}
           />
 
           <Footer />
